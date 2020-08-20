@@ -1,0 +1,23 @@
+
+body  {
+  background-color:purple;
+
+
+color: teal;
+
+
+border-color:black;
+border-width: thick;
+}
+
+
+#canvas {
+border-style:solid;
+border-color:blue;
+}
+
+
+font-family:cursive;
+padding-size:35px;
+font-size:25px;
+text-align:center;
