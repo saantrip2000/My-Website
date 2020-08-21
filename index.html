@@ -25,14 +25,29 @@
   <b><i><u> Bye </u></i></b>
 <script>
 var canvas = document.getElementById("canvas")
+
+
+var pen = canvas.getContext("2d")
+
+var x = 0
+function draw() {
+  x += 1
+  pen.clearRect (0, 0, canvas.width, canvas.height)
+  x %= canvas.width
 canvas.width = 400
 canvas.height = 400
-var pen = canvas.getContext("2d")
 pen.fillStyle = "orange"
-pen.fillRect(10,50,30,30)
+pen.fillRect(x,50,30,30)
 pen.fillStyle = "yellow"
-pen.fillRect(150,150,50,50)
+pen.fillRect(150,150,50,50)}
+window.setInterval(draw, 10)
 </script>
+
+
+
+
+
+
 
 
 </body>
